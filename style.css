@@ -95,6 +95,7 @@
 .option.correct .option-circle { background: #10b981 !important; color:#fff !important; border-color:#059669 !important;}
 .option.wrong { background: #f15252 !important; border-color:#ef4444 !important; color:#7f1d1d; font-weight:600;}
 .option.wrong .option-circle { background:#ef4444 !important; color:#fff !important; border-color:#b91c1c !important; }
+.option.wrong .option-text, .option.correect .option-text {color:black;}
 
 /* ==================== BUTTON ==================== */
 #skipBtn, #submitEssay {
