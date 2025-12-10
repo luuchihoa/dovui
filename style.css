@@ -53,12 +53,21 @@
   transition: 0.25s ease;
   word-break: break-word; /* text dài xuống dòng */
 }
-.option:hover {
-  background: #fde68a;
-  transform: scale(1.03);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+@media (hover: hover) and (pointer: fine) {
+  .option:hover {
+    background: #fde68a;
+    transform: scale(1.03);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  }
+  .option:hover .option-circle{
+    border: 2px solid #3b82f6;
+    background: #ffffff;
+    color: #3b82f6;
+  }
+  .option:hover .option-text{
+    color: #3b82f6;
+  }
 }
-
 /* Circle A/B/C/D */
 .option-circle {
   flex-shrink: 0;
@@ -75,21 +84,12 @@
   color: #ffffff;
   margin-top: 2px; /* ✅ căn giữa với text dài */
 }
-.option:hover .option-circle{
-  border: 2px solid #3b82f6;
-  background: #ffffff;
-  color: #3b82f6;
-}
 /* Text đáp án */
 .option-text {
   flex: 1;
   overflow-wrap: break-word;
   color: white;
 }
-.option:hover .option-text{
-  color: #3b82f6;
-}
-
 /* Selected / Correct / Wrong */
 .option.correct { background: #4af887 !important; border-color: #10b981 !important; color:#065f46; font-weight:600;}
 .option.correct .option-circle { background: #10b981 !important; color:#fff !important; border-color:#059669 !important;}
